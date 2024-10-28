@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts - Watalappan</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-header {
+            text-align: center;
+        }
+
+        .recipe-header img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 20px 0 10px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        .ingredients, .directions {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+        }
+
+        .directions ol {
+            padding-left: 20px;
+        }
+
+        .directions ol li {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <strong><a href="/index.html">Home</a></strong>
+            <strong><a href="/pages/maindishes.html">Main Dishes</a></strong>
+            <strong><a href="/pages/dessert.html">Desserts</a></strong>
+            <strong><a href="/pages/beverage.html">Beverages</a></strong>
+            <strong><a href="/pages/snacks.html">Snacks</a></strong>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="recipe-header">
+            <img src="/assets/images/watalappan.jpg" alt="Watalappan">
+            <h1>Watalappan</h1>
+            <p>A creamy coconut custard flavored with jaggery and spices, a traditional Sri Lankan dessert.</p>
+        </div>
+
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li><input type="checkbox" id="ingredient1"><label for="ingredient1">200g jaggery (palm sugar)</label></li>
+                <li><input type="checkbox" id="ingredient2"><label for="ingredient2">5 large eggs</label></li>
+                <li><input type="checkbox" id="ingredient3"><label for="ingredient3">1 cup thick coconut milk</label></li>
+                <li><input type="checkbox" id="ingredient4"><label for="ingredient4">1 tsp cardamom powder</label></li>
+                <li><input type="checkbox" id="ingredient5"><label for="ingredient5 ">½ tsp nutmeg powder</label></li>
+                <li><input type="checkbox" id="ingredient6"><label for="ingredient6">½ cup chopped cashew nuts (optional)</label></li>
+            </ul>
+        </div>
+
+        <div class="directions">
+            <h2>Directions</h2>
+            <ol>
+                <li>Grate or chop the jaggery finely and melt it using a little water to form a thick syrup. Let it cool.</li>
+                <li>In a large bowl, beat the eggs until frothy.</li>
+                <li>Add the coconut milk, melted jaggery syrup, cardamom powder, and nutmeg to the eggs. Mix well.</li>
+                <li>Strain the mixture into a steaming dish to remove any lumps.</li>
+                <li>Sprinkle the chopped cashews on top (if using).</li>
+                <li>Steam the mixture on low heat for 30-40 minutes or until set.</li>
+                <li>Let it cool and serve chilled.</li>
+            </ol>
+        </div>
+
+        <p><strong>Prep Time:</strong> 20 minutes | <strong>Cook Time:</strong> 40 minutes | <strong>Serves:</strong> 6</p>
+    </div>
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

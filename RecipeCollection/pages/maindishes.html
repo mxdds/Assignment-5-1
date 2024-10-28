@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Dishes - Rice & Curry, Fish Ambul Thiyal, Kottu Roti</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: large;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .recipe-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .recipe-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: calc(30% - 40px);
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.05);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 20px 0 10px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+        }
+
+        .directions ol {
+            padding-left: 20px;
+        }
+
+        .directions ol li {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .recipe-card {
+                width: calc(45% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .recipe-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <strong><a href="/index.html">Home</a></strong>
+            <strong><a href="/pages/maindishes.html">Main Dishes</a></strong>
+            <strong><a href="/pages/dessert.html">Desserts</a></strong>
+            <strong><a href="/pages/beverage.html">Beverages</a></strong>
+            <strong><a href="/pages/snacks.html">Snacks</a></strong>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="recipe-grid">
+           
+            <div class="recipe-card">
+                <img src="/assets/images/rice-curry.jpg" alt="Rice & Curry">
+                <h1>Rice & Curry</h1>
+                <p>A traditional Sri Lankan dish served with a variety of curries. Simple yet packed with flavor.</p>
+
+                <h2>Ingredients</h2>
+                <ul>
+                    <li><input type="checkbox" id="ingredient1"><label for="ingredient1">2 cups of rice</label></li>
+                    <li><input type="checkbox" id="ingredient2"><label for="ingredient2">200g chicken breast</label></li>
+                    <li><input type="checkbox" id="ingredient3"><label for="ingredient3">1 tbsp curry powder</label></li>
+                    <li><input type="checkbox" id="ingredient4"><label for="ingredient4">1 large onion, sliced</label></li>
+                    <li><input type="checkbox" id="ingredient5"><label for="ingredient5">2 tomatoes, chopped</label></li>
+                    <li><input type="checkbox" id="ingredient6"><label for="ingredient6">1 cup coconut milk</label></li>
+                    <li><input type="checkbox" id="ingredient7"><label for="ingredient7">2 cloves garlic, minced</label></li>
+                    <li><input type="checkbox" id="ingredient8"><label for="ingredient8">Salt and pepper to taste</label></li>
+                </ul>
+
+                
+                <h2>Directions</h2>
+                <ol>
+                    <li>Wash and soak the rice for 15 minutes, then cook it according to package instructions.</li>
+                    <li>In a pan, heat some oil and sauté the onions and garlic until golden.</li>
+                    <li>Add the curry powder and fry for another minute.</li>
+                    <li>Add the chicken and cook until browned on all sides.</li>
+                    <li>Add the tomatoes and cook for a few minutes until softened.</li>
+                    <li>Pour in the coconut milk, reduce the heat, and let it simmer for 15-20 minutes.</li>
+                    <li>Season with salt and pepper to taste.</li>
+                    <li>Serve the curry over hot rice with your choice of sides.</li>
+                </ol>
+                <p><strong>Prep Time:</strong> 15 minutes | <strong>Cook Time:</strong> 30 minutes | <strong>Serves:</strong> 4</p>
+            </div>
+
+            <div class="recipe-card">
+                <img src="/assets/images/fish-ambul-thiyal.jpg" alt="Fish Ambul Thiyal">
+                <h1>Fish Ambul Thiyal</h1>
+                <p>A sour fish curry made with black pepper, goraka, and spices, a beloved Sri Lankan classic.</p>
+
+                
+                <h2>Ingredients</h2>
+                <ul>
+                    <li><input type="checkbox" id="ingredient9"><label for="ingredient9">500g fish (tuna or mackerel)</label></li>
+                    <li><input type="checkbox" id="ingredient10"><label for="ingredient10">1 tbsp black pepper</label></li>
+                    <li><input type="checkbox" id="ingredient11"><label for="ingredient11">2 tbsp goraka (or tamarind)</label></li>
+                    <li><input type="checkbox" id="ingredient12"><label for="ingredient12">1 tsp turmeric powder</label></li>
+                    <li><input type="checkbox" id="ingredient13"><label for="ingredient13">3 cloves garlic, minced</label></li>
+                    <li><input type="checkbox" id="ingredient14"><label for="ingredient14">Salt to taste</label></li>
+                </ul>
+
+                
+                <h2>Directions</h2>
+                <ol>
+                    <li>Cut the fish into large cubes and rinse with water.</li>
+                    <li>Mix the black pepper, turmeric, garlic, and salt into a paste.</li>
+                    <li>Rub the paste onto the fish and let it marinate for 30 minutes.</li>
+                    <li>Add the fish and goraka to a pan with water and simmer on low heat for 20-30 minutes.</li>
+                    <li>Serve with rice or other side dishes.</li>
+                </ol>
+                <p><strong>Prep Time:</strong> 30 minutes | <strong>Cook Time:</strong> 30 minutes | <strong>Serves:</strong> 4</p>
+            </div>
+
+         
+            <div class="recipe-card">
+                <img src="/assets/images/kottu-roti.jpg" alt="Kottu Roti">
+                <h1>Kottu Roti</h1>
+                <p>A popular Sri Lankan street food, made with chopped roti, vegetables, and optional meats or eggs.</p>
+
+                
+                <h2>Ingredients</h2>
+                <ul>
+                    <li><input type="checkbox" id="ingredient15"><label for="ingredient15">3 roti, chopped into small pieces</label></li>
+                    <li><input type="checkbox" id="ingredient16"><label for="ingredient16">1 onion, sliced</label></li>
+                    <li><input type="checkbox" id="ingredient17"><label for="ingredient17">2 eggs, beaten</label></li>
+                    <li><input type="checkbox" id="ingredient18"><label for="ingredient18">1 carrot , grated</label></li>
+                    <li><input type="checkbox" id="ingredient19"><label for="ingredient19">100g chicken, cooked and shredded (optional)</label></li>
+                    <li><input type="checkbox" id="ingredient20"><label for="ingredient20">Salt and pepper to taste</label></li>
+                </ul>
+
+                <h2>Directions</h2>
+                <ol>
+                    <li>Heat oil in a large pan and sauté the onions until golden.</li>
+                    <li>Add the eggs and scramble until cooked.</li>
+                    <li>Add the chopped roti, carrot, and chicken (if using) and stir fry for a few minutes.</li>
+                    <li>Season with salt and pepper to taste.</li>
+                    <li>Serve hot with spicy curry or sauce.</li>
+                </ol>
+                <p><strong>Prep Time:</strong> 15 minutes | <strong>Cook Time:</strong> 15 minutes | <strong>Serves:</strong> 4</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

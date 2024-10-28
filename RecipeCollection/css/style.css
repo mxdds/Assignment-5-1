@@ -1,0 +1,339 @@
+body {
+    background: rgb(45,95,76);background: linear-gradient(43deg, rgba(45,95,76,1) 0%, rgba(126,152,142,1) 100%, rgba(255,255,255,1) 100%);
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #333;
+    color: #ffffff;
+    padding: 5em;
+    text-align:center;
+    font-size: large;
+}
+
+nav a {
+    
+    color: #ffffff;
+    text-decoration:none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+
+.banner {
+    background-color: #f0f0f0;
+    padding: 2em;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    
+}
+
+.banner-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 50px;
+    width: 450px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.recipe-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; 
+    flex: 0 0 auto; 
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-header {
+    text-align: center;
+}
+
+.recipe-header img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe-header h1 {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.ingredients, .directions {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+.directions ol {
+    padding-left: 20px;
+}
+
+.directions ol li {
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    right: 0;
+    background-color: #4CAF50;
+}
+
+.nav-links a {
+    margin: 10px 0;
+    color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+}
+
+.banner {
+    background-color: #f0f0f0;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.card {
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+    margin: 0 10px 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+
+    .banner-text h2 {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+    }
+
+    .burger {
+        display: flex; 
+    }
+}

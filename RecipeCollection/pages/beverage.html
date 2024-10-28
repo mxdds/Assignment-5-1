@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the traditional way to brew the perfect cup of Ceylon tea.">
+    <meta name="keywords" content="Ceylon Tea, Beverages, Recipes">
+    <title>Beverages - Ceylon Tea</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-header {
+            text-align: center;
+        }
+
+        .recipe-header img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 20px 0 10px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        .ingredients, .directions {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .directions ol {
+            padding-left: 20px;
+        }
+
+        .directions ol li {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            nav {
+                padding: 10px;
+            }
+
+            nav a {
+                margin: 0 10px;
+                font-size: 14px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .recipe-header img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <strong><a href="/index.html">Home</a></strong>
+            <strong><a href="/pages/maindishes.html">Main Dishes</a></strong>
+            <strong><a href="/pages/dessert.html">Desserts</a></strong>
+            <strong><a href="/pages/beverage.html">Beverages</a></strong>
+            <strong><a href="/pages/snacks.html">Snacks</a></strong>
+        </div>
+    </nav>
+
+
+    <div class="content">
+        <div class="recipe-header">
+            <img src="/assets/images/ceylon-tea.jpg" alt="Ceylon Tea">
+            <h1>Ceylon Tea</h1>
+            <p>Discover the traditional way to brew the perfect cup of Ceylon tea.</p>
+        </div>
+
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li><input type="checkbox" id="ingredient1"><label for="ingredient1">1 tsp loose leaf Ceylon tea</label></li>
+                <li><input type="checkbox" id="ingredient2"><label for="ingredient2">1 cup boiling water</label></li>
+                <li><input type="checkbox" id="ingredient3 "><label for="ingredient3">1-2 tsp sugar or honey (optional)</label></li>
+                <li><input type="checkbox" id="ingredient4"><label for="ingredient4">Milk or lemon (optional)</label></li>
+            </ul>
+        </div>
+
+        <div class="directions">
+            <h2>Directions</h2>
+            <ol>
+                <li>Bring fresh water to a rolling boil.</li>
+                <li>Place 1 teaspoon of loose leaf Ceylon tea in a teapot or cup.</li>
+                <li>Pour the boiling water over the tea leaves.</li>
+                <li>Let the tea steep for 3-5 minutes, depending on desired strength.</li>
+                <li>Strain the tea leaves or remove the tea bag .</li>
+                <li>Add sugar or honey to taste, if desired.</li>
+                <li>For a richer flavor, add milk or a slice of lemon.</li>
+                <li>Serve hot and enjoy your traditional Ceylon tea!</li>
+            </ol>
+        </div>
+
+        <p><strong>Prep Time:</strong> 5 minutes | <strong>Brew Time:</strong> 5 minutes | <strong>Serves:</strong> 1</p>
+    </div>
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
